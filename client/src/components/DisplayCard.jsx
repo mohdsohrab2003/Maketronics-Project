@@ -3,6 +3,7 @@ import BookCard from "./BookCard";
 import { AppContext } from "../context/AppContext";
 import Searchbar from "./Searchbar";
 import { useParams } from "react-router-dom";
+import Footer from "./Footer";
 
 const DisplayCard = () => {
   const { productData } = useContext(AppContext);
@@ -47,6 +48,7 @@ const DisplayCard = () => {
           )}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

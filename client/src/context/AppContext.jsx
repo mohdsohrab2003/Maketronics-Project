@@ -3,7 +3,7 @@ import { useEffect, useState, createContext } from "react";
 export const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
-  const [bookData, setBookData] = useState([]); // unused right now
+  const [bookData, setBookData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [productData, setProductData] = useState([]);
@@ -21,7 +21,7 @@ export const AppContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    fetchProductData(); // only run once
+    fetchProductData();
   }, []);
 
   const value = {

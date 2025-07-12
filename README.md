@@ -38,12 +38,12 @@ npm start            # Starts backend on PORT (e.g., 8080)
 
 cd client
 npm install          # Install frontend dependencies
-npm run dev           # Starts React app on localhost:3000
+npm run dev           # Starts React app on localhost:5173np
 
 Access the App
 Once both servers are running:
 
-Frontend: http://localhost:3000
+Frontend: http://localhost:5173
 
 Backend (API): http://localhost:8080
 
