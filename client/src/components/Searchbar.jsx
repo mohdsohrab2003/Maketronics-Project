@@ -2,18 +2,16 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Searchbar = ({ data }) => {
-  const [input, setInput] = useState(data || "");
+  const [input, setInput] = useState(data ? data : "");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const onSearchHandler = (e) => {
     e.preventDefault();
-    const query = input.trim();
-    if (!query) return;
-    navigate(`/search/${encodeURIComponent(query)}`);
+    navigate("/search/" + input);
   };
 
   return (
-    <form className="max-w-md mx-auto mt-20" onSubmit={handleSubmit}>
+    <form className="max-w-md mx-auto mt-20" onSubmit={onSearchHandler}>
       <label
         htmlFor="default-search"
         className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"

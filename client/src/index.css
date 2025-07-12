@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}

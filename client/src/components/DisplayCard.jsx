@@ -28,7 +28,6 @@ const DisplayCard = () => {
     }
   }, [productData, input]);
 
-  // console.log(filterProduct);
   return (
     <>
       <div className="relative md:px-36 px-8 pt-20 text-left">

@@ -7,9 +7,9 @@ import DisplayCard from "./components/DisplayCard";
 const App = () => {
   return (
     <>
-      <Home />
       <Routes>
-        <Route path="/search/:input" element={<DisplayCard />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/search/:input" element={<Home />} />
       </Routes>
     </>
   );
